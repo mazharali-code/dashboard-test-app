@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Task } from '../../../core/model/task.model';
 
 @Component({
   selector: 'app-task',
@@ -8,9 +9,5 @@ import { Component, Input } from '@angular/core';
   standalone: true,
 })
 export class TaskComponent {
-  @Input() title = '';
-  @Input() description = '';
-  @Input() href = '#';
-  @Input() imageUrl = '';
-  @Input() imageAlt = '';
+  @Input({ required: true }) task!: Task;
 }
