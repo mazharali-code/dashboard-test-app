@@ -11,8 +11,6 @@ export class TaskComponent {
   @Input() title = '';
   @Input() description = '';
   @Input() href = '#';
-  
   @Input() imageUrl = '';
   @Input() imageAlt = '';
-
 }
