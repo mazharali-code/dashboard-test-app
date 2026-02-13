@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row gx-5 gy-4">
             @for (task of tasks(); track task.title) {
-                <app-task class="col-12 col-md-6" [title]="task.title" [description]="task.description" [href]="task.href" [imageUrl]="task.imageUrl" [imageAlt]="task.imageAlt"></app-task>
+                <app-task class="col-12 col-lg-6" [title]="task.title" [description]="task.description" [href]="task.href" [imageUrl]="task.imageUrl" [imageAlt]="task.imageAlt"></app-task>
             }
         </div>
     </div>

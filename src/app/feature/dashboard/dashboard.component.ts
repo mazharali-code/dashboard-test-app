@@ -1,8 +1,8 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { BannerComponent } from '../../../shared/components/banner/banner.component';
-import { TaskComponent } from '../../../shared/components/task/task.component';
-import { TasksService } from '../../../core/service/task.service';
-import { Task } from '../../../core/model/task.model';
+import { BannerComponent } from '../../shared/components/banner/banner.component';
+import { TaskComponent } from '../../shared/components/task/task.component';
+import { TasksService } from '../../core/service/task.service';
+import { Task } from '../../core/model/task.model';
 
 @Component({
   selector: 'app-dashboard',
@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
   tasks = signal<Task[]>([]);
   
   ngOnInit() {
-    this.tasks.set(this.tasksService.getTasks());
+    this.tasks.update(() => this.tasksService.getTasks());
   }
 }
   

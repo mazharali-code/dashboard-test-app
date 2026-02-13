@@ -1,3 +1,4 @@
+@use '../../scss/variables' as v;
 
 .task-card {
   overflow: hidden;
@@ -6,18 +7,28 @@
 }
 
 .card-title {
+  font-family: v.$default-font;
   font-size: 20px;
   font-weight: 500;
   color: #212121;
 }
 
+.card-description {
+  font-family: v.$default-font;
+  font-size: v.$small-font-size;
+  font-weight: 400;
+  color: #696765;
+  margin-top: 10px;
+}
+
 .arrow-icon {
-    width: 20px;
+  width: 20px;
 }
 
 .visit-link {
+  font-family: v.$default-font;
   font-weight: 700;
-  font-size: 14px;
+  font-size: v.$small-font-size;
   text-decoration: none;
   color: #455560;
 }
@@ -38,8 +49,7 @@
   width: 140px;
   border-radius: 4px;
 
-  @media (max-width: 768px) {
+  @media (max-width: v.$tablet-size) {
     width: 100px;
   }
-
 }
