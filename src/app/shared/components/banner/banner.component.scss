@@ -1,6 +1,18 @@
+@import "bootstrap/scss/bootstrap";
+
 .header {
-    background: linear-gradient(to right, #00a6d9, #3ab26d);
+    background: linear-gradient(274.91deg, #70bc1f -26.96%, #00ace1 93.71%);
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1); 
     color: #ffffff;
-    padding: 100px 75px;
+    padding-top: 100px;
+    padding-left: 10px;
+    height: 280px;
+
+    @include media-breakpoint-up(md) {
+        padding-left: 40px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-left: 70px;
+    }
 }

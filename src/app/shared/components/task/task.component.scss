@@ -34,8 +34,11 @@
 }
 
 .task-card-img {
-  width: 160px;
-  height: 160px;
-  //object-fit: cover;
+  width: 140px;
   border-radius: 4px;
+
+  @media (max-width: 768px) {
+    width: 100px;
+  }
+
 }
