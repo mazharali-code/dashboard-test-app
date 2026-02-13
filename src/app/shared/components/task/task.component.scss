@@ -1,0 +1,41 @@
+
+.task-card {
+  overflow: hidden;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212121;
+}
+
+.arrow-icon {
+    width: 20px;
+}
+
+.visit-link {
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: #455560;
+}
+
+.visit-link:hover {
+  text-decoration: underline;
+}
+
+.card-image-wrapper {
+  height: 100%;
+  padding: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-card-img {
+  width: 160px;
+  height: 160px;
+  //object-fit: cover;
+  border-radius: 4px;
+}
