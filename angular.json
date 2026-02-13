@@ -29,8 +29,12 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
+           "styles": [
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
